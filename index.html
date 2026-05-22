@@ -20,14 +20,14 @@
       --blanc:   #ffffff;
       --texte:   #2a3a1a;
     }
-
+ 
     /* ── RESET ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body { font-family: 'Nunito', sans-serif; background: var(--creme); color: var(--texte); overflow-x: hidden; }
     img { display: block; max-width: 100%; }
     a { text-decoration: none; color: inherit; }
-
+ 
     /* ── NAV ── */
     nav {
       position: sticky; top: 0; z-index: 100;
@@ -50,7 +50,7 @@
     .nav-cta:hover { background: var(--vert) !important; transform: scale(1.04); }
     .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
     .nav-burger span { width: 26px; height: 3px; background: var(--vert-f); border-radius: 2px; transition: .3s; }
-
+ 
     /* ── TICKER ── */
     .ticker-wrap {
       background: var(--vert);
@@ -67,7 +67,7 @@
     }
     .ticker-track span::before { content: "♥  "; color: var(--or); }
     @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-
+ 
     /* ── HERO ── */
     .hero {
       background: var(--vert);
@@ -116,7 +116,7 @@
       transition: background .2s, transform .15s;
     }
     .btn-primary:hover { background: var(--vert); transform: translateY(-2px); }
-
+ 
     /* ── POURQUOI ── */
     .pourquoi {
       background: var(--creme);
@@ -141,14 +141,14 @@
     .pourquoi-icon.plain svg { fill: var(--creme); stroke: none; }
     .pourquoi-item h3 { font-weight: 800; color: var(--vert-cl); font-size: 1rem; }
     .pourquoi-item p { font-size: .88rem; color: #555; line-height: 1.6; text-align: center; }
-
+ 
     /* ── BANDE D'IMAGES ── */
     .img-strip { display: grid; height: 280px; overflow: hidden; }
     .img-strip.cols3 { grid-template-columns: repeat(3, 1fr); }
     .img-strip.cols4 { grid-template-columns: repeat(4, 1fr); }
     .img-strip img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
     .img-strip img:hover { transform: scale(1.04); }
-
+ 
     /* ── GAMME ── */
     .gamme {
       background: var(--vert);
@@ -208,7 +208,7 @@
     .produit-info p { font-size: .88rem; color: #555; line-height: 1.6; margin-bottom: 10px; }
     .produit-ingr { font-size: .78rem !important; color: #888 !important; }
     .voir-plus { color: var(--vert-cl); font-weight: 700; font-size: .85rem; }
-
+ 
     /* ── FOCUS PRODUIT ── */
     .focus {
       background: var(--creme);
@@ -227,7 +227,7 @@
     .focus-point strong { color: var(--vert-f); font-weight: 800; }
     .focus-point span { font-size: .9rem; color: #555; }
     .focus-img { width: 100%; height: 440px; object-fit: cover; border-radius: 8px; }
-
+ 
     /* ── HISTOIRE ── */
     .histoire {
       display: grid; grid-template-columns: 1fr 1fr;
@@ -258,7 +258,7 @@
     }
     .histoire-droite h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--vert-f); margin-bottom: 18px; }
     .histoire-droite p { font-size: .95rem; color: #555; line-height: 1.8; margin-bottom: 16px; }
-
+ 
     /* ── OÙ TROUVER ── */
     .ou-trouver { background: var(--creme-f); padding: 80px 5%; }
     .ou-trouver h2 {
@@ -282,7 +282,7 @@
       background: var(--creme); border-radius: 20px;
       padding: 7px 16px; font-size: .82rem; font-weight: 700; color: var(--marron);
     }
-
+ 
     /* ── CONTACT ── */
     .contact {
       background: var(--marron);
@@ -325,7 +325,7 @@
       background: rgba(255,255,255,.15); border-radius: 8px; padding: 20px;
       color: var(--blanc); text-align: center; font-weight: 700;
     }
-
+ 
     /* ── FOOTER ── */
     footer {
       background: var(--creme-f);
@@ -343,7 +343,7 @@
     }
     .social-icon:hover { background: var(--or); transform: scale(1.1); }
     .social-icon svg { width: 18px; fill: var(--blanc); }
-
+ 
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .nav-links { display: none; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0; background: var(--creme); padding: 20px 5%; box-shadow: 0 8px 20px rgba(0,0,0,.1); gap: 18px; }
@@ -369,7 +369,7 @@
   </style>
 </head>
 <body>
-
+ 
 <!-- NAV -->
 <nav id="navbar">
   <img src="images/logo.png" alt="Sipsta Modern Rituals" class="nav-logo">
@@ -384,7 +384,7 @@
     <span></span><span></span><span></span>
   </div>
 </nav>
-
+ 
 <!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker-track">
@@ -398,10 +398,10 @@
     <span>Nouveau – Déjà disponible chez Carrefour</span>
   </div>
 </div>
-
+ 
 <!-- HERO -->
 <section class="hero" id="accueil">
-  <img src="images/banner1.png" alt="Matcha latte Sipsta" class="hero-img">
+  <img src="images/image1.png" alt="Matcha latte Sipsta" class="hero-img">
   <div class="hero-right">
     <div class="hero-badge" aria-hidden="true">
       <svg class="badge-text" viewBox="0 0 110 110">
@@ -423,7 +423,7 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- POURQUOI SIPSTA -->
 <section class="pourquoi">
   <h2>Pourquoi Sipsta ?</h2>
@@ -460,14 +460,12 @@
   </div>
   <a href="#gamme" class="btn-primary">Voir nos produits</a>
 </section>
-
+ 
 <!-- BANDE IMAGES 1 -->
-<div class="img-strip cols3">
-  <img src="images/strip1_a.jpg" alt="Matcha latte préparation">
-  <img src="images/strip1_b.jpg" alt="Matcha texture">
-  <img src="images/strip1_c.jpg" alt="Matcha mousse">
+<div style="height:280px; overflow:hidden;">
+  <img src="images/banner1.png" alt="Bannière Sipsta" style="width:100%; height:100%; object-fit:cover;">
 </div>
-
+ 
 <!-- GAMME -->
 <section class="gamme" id="gamme">
   <div class="gamme-ticker-wrap">
@@ -479,14 +477,14 @@
   </div>
   <h2>Notre gamme</h2>
   <p class="gamme-intro">Deux formats, une promesse : le plaisir d'un vrai latte, en un instant. Sipsta, c'est une gamme pensée pour s'adapter à tous vos moments. En doypack 160g ou en sticks individuels — chaque recette est certifiée Bio et Fairtrade, préparée juste avec de l'eau.</p>
-
+ 
   <div class="produits-grid">
-
+ 
     <!-- Matcha Latte -->
     <div class="produit-card">
       <div class="produit-img-wrap">
-        <img src="images/prod_matcha_latte.jpg" alt="Matcha Latte" class="img-principale">
-        <img src="images/ambiance_matcha.png" alt="Ambiance Matcha Latte" class="img-ambiance">
+        <img src="images/SIPSTA-MATCHA-LATTE-FOND-BLANC.jpg" alt="Matcha Latte" class="img-principale">
+        <img src="images/bannière lp 1.png" alt="Ambiance Matcha Latte" class="img-ambiance">
       </div>
       <div class="produit-info">
         <h3>Matcha Latte</h3>
@@ -495,12 +493,12 @@
         <p class="produit-ingr">Ingrédients : Poudre d'avoine instantanée sans gluten* 77%, Sucre de canne*, Thé vert Matcha premium* 8%…</p>
       </div>
     </div>
-
+ 
     <!-- Matcha Latte Vanille -->
     <div class="produit-card">
       <div class="produit-img-wrap">
-        <img src="images/prod_vanille.jpg" alt="Matcha Latte Vanille" class="img-principale">
-        <img src="images/ambiance_vanille.png" alt="Ambiance Vanille" class="img-ambiance">
+        <img src="images/SIPSTA-VANILLE-LATTE-FOND-BLANC.jpg" alt="Matcha Latte Vanille" class="img-principale">
+        <img src="images/bannière 2 LP.png" alt="Ambiance Vanille" class="img-ambiance">
       </div>
       <div class="produit-info">
         <h3>Matcha Latte Vanille</h3>
@@ -509,12 +507,12 @@
         <p class="produit-ingr">Ingrédients : Poudre d'avoine instantanée sans gluten* 79%, Sucre de canne*, Thé vert Matcha premium* 6%…</p>
       </div>
     </div>
-
+ 
     <!-- Chaï Latte -->
     <div class="produit-card">
       <div class="produit-img-wrap">
-        <img src="images/prod_chai.jpg" alt="Chaï Latte" class="img-principale">
-        <img src="images/ambiance_chai.png" alt="Ambiance Chaï" class="img-ambiance">
+        <img src="images/SIPSTA-CHAI-LATTE-FOND-BLANC.jpg" alt="Chaï Latte" class="img-principale">
+        <img src="images/bannière 2 LP.png" alt="Ambiance Chaï" class="img-ambiance">
       </div>
       <div class="produit-info">
         <h3>Chaï Latte</h3>
@@ -523,12 +521,12 @@
         <p class="produit-ingr">Ingrédients : Poudre d'avoine instantanée sans gluten* 79.5%, Sucre de canne*, Épices* (cannelle*, clou de …</p>
       </div>
     </div>
-
+ 
     <!-- Super Matcha Latte Cacao -->
     <div class="produit-card">
       <div class="produit-img-wrap">
-        <img src="images/prod_super.jpg" alt="Super Matcha Latte Cacao" class="img-principale">
-        <img src="images/ambiance_super.png" alt="Ambiance Super Matcha" class="img-ambiance">
+        <img src="images/SIPSTA-CACAO-SUPER-LATTE-FOND-BLANC.jpg" alt="Super Matcha Latte Cacao" class="img-principale">
+        <img src="images/super latte.png" alt="Ambiance Super Matcha" class="img-ambiance">
       </div>
       <div class="produit-info">
         <h3>Super Matcha Latte Cacao, Collagène et Lion's Mane</h3>
@@ -537,12 +535,12 @@
         <p class="produit-ingr">Ingrédients : Poudre d'avoine instantanée sans gluten* 69%, Sucre de canne*, Thé vert Matcha premium* 6%…</p>
       </div>
     </div>
-
+ 
     <!-- Matcha Premium 100% -->
     <div class="produit-card">
       <div class="produit-img-wrap">
-        <img src="images/prod_matcha_pur.jpg" alt="Matcha Premium 100%" class="img-principale">
-        <img src="images/ambiance_pur.png" alt="Ambiance Matcha Premium" class="img-ambiance">
+        <img src="images/SIPSTA-MATCHA-PURE-FOND-BLANC.jpg" alt="Matcha Premium 100%" class="img-principale">
+        <img src="images/bannière 2 LP.png" alt="Ambiance Matcha Premium" class="img-ambiance">
       </div>
       <div class="produit-info">
         <h3>Matcha Premium 100%</h3>
@@ -551,12 +549,12 @@
         <p class="produit-ingr">Ingrédients : 100% Poudre de thé vert Matcha* premium. *Produit issu de l'Agriculture Biologique.</p>
       </div>
     </div>
-
+ 
     <!-- Sticks Matcha Premium -->
     <div class="produit-card">
       <div class="produit-img-wrap">
-        <img src="images/prod_sticks.png" alt="Sticks Matcha Premium 100%" class="img-principale">
-        <img src="images/ambiance_matcha.png" alt="Ambiance Sticks Matcha" class="img-ambiance">
+        <img src="images/SIPSTA-STICK-ET-BOITE-MATCHA-PUR-20g-FOND-BLANC.png" alt="Sticks Matcha Premium 100%" class="img-principale">
+        <img src="images/bannière lp 1.png" alt="Ambiance Sticks Matcha" class="img-ambiance">
       </div>
       <div class="produit-info">
         <h3>Sticks de Matcha Premium 100%</h3>
@@ -565,11 +563,11 @@
         <p class="produit-ingr">Ingrédients : 100% Poudre de thé vert Matcha* premium. *Produit issu de l'Agriculture Biologique.</p>
       </div>
     </div>
-
+ 
   </div>
   <a href="#contact" class="btn-primary" style="background:var(--creme);color:var(--vert-f);">Nous contacter</a>
 </section>
-
+ 
 <!-- FOCUS PRODUIT -->
 <section style="background:var(--creme); padding: 80px 5%;">
   <div class="focus" style="padding:0; max-width:1100px; margin:0 auto;">
@@ -589,10 +587,10 @@
         </div>
       </div>
     </div>
-    <img src="images/ambiance_super.png" alt="Super Matcha Latte Cacao" class="focus-img">
+    <img src="images/super latte.png" alt="Super Matcha Latte Cacao" class="focus-img">
   </div>
 </section>
-
+ 
 <!-- NOTRE HISTOIRE -->
 <section class="histoire" id="histoire">
   <div class="histoire-gauche">
@@ -608,15 +606,12 @@
     <p>Juste de l'eau, et votre moment de plaisir commence !</p>
   </div>
 </section>
-
+ 
 <!-- BANDE IMAGES 2 -->
-<div class="img-strip cols4">
-  <img src="images/strip2_a.jpg" alt="Matcha glacé">
-  <img src="images/strip2_b.jpg" alt="Poudre matcha">
-  <img src="images/strip2_c.jpg" alt="Latte art">
-  <img src="images/strip2_d.jpg" alt="Cacao poudre">
+<div style="height:280px; overflow:hidden;">
+  <img src="images/banner2.png" alt="Bannière Sipsta" style="width:100%; height:100%; object-fit:cover;">
 </div>
-
+ 
 <!-- OÙ TROUVER -->
 <section class="ou-trouver" id="ou-acheter">
   <h2>Où nous trouver ?</h2>
@@ -629,7 +624,7 @@
       <p>Disponible dans le rayon boissons chaudes & bien-être de votre Carrefour, dès maintenant !</p>
       <div class="logos-magasin">
         <img src="images/carrefour.png" alt="Carrefour">
-        <img src="images/carrefour_market.png" alt="Carrefour Market">
+        <img src="images/carrefour market.png" alt="Carrefour Market">
       </div>
     </div>
     <div class="ou-card">
@@ -645,12 +640,12 @@
     </div>
   </div>
 </section>
-
+ 
 <!-- CONTACT -->
 <section class="contact" id="contact">
   <h2>Nous contacter</h2>
   <p class="contact-sub">Distribution, partenariat, presse, ou simplement pour nous dire bonjour — on répond toujours avec plaisir !</p>
-  <form class="contact-form" id="contactForm" action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+  <form class="contact-form" id="contactForm" action="https://formsubmit.co/oceane.hermey@fileane.fr" method="POST">
     <div>
       <label class="form-label" for="prenom">Prénom *</label>
       <input class="form-input" type="text" id="prenom" name="prenom" placeholder="Saisissez votre prénom" required>
@@ -691,10 +686,10 @@
     <button type="submit" class="btn-submit">Envoyer</button>
   </form>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
-  <img src="images/logo.png" alt="Sipsta" class="footer-logo">
+  <img src="images/LOGO-SIPSTA-fonce_edited_edited_edited.png" alt="Sipsta" class="footer-logo">
   <p class="footer-copy">© Sipsta 2026. Tous droits réservés.<br>Mentions légales & Politique de Confidentialité</p>
   <div class="footer-social">
     <a href="https://www.fileane.fr" target="_blank" class="social-icon" aria-label="Instagram">
@@ -708,13 +703,13 @@
     </a>
   </div>
 </footer>
-
+ 
 <script>
   // Menu burger mobile
   function toggleMenu() {
     document.getElementById('navLinks').classList.toggle('open');
   }
-
+ 
   // Formulaire Formspree avec feedback
   const form = document.getElementById('contactForm');
   form.addEventListener('submit', async function(e) {
@@ -744,3 +739,4 @@
 </script>
 </body>
 </html>
+ 
