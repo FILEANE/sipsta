@@ -62,10 +62,11 @@
       animation: ticker 22s linear infinite;
     }
     .ticker-track span {
-      color: var(--creme); font-weight: 700; font-size: .88rem;
-      letter-spacing: .04em; padding: 0 28px;
+  color: var(--creme); font-weight: 700; font-size: .88rem;
+  letter-spacing: .04em; padding: 0 8px;
     }
-    .ticker-track span::before { content: "♥  "; color: var(--or); }
+    .ticker-track span::before { content: ""; }
+    .ticker-track span::after { content: " ♥ "; color: var(--or); }
     @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
  
     /* ── HERO ── */
