@@ -378,8 +378,13 @@
     }
   </style>
 </head>
+  
 <body>
- 
+<!-- BANNIÈRE COOKIES -->
+<div id="cookie-banner" style="position:fixed; bottom:0; left:0; right:0; background:var(--vert-f); color:#fff; padding:16px 5%; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; z-index:999; box-shadow:0 -4px 20px rgba(0,0,0,.2);">
+  <p style="font-size:.85rem; color:rgba(255,255,255,.85); margin:0; max-width:700px;">🍪 Ce site utilise des cookies techniques nécessaires à son bon fonctionnement (Google Fonts). Aucun cookie publicitaire n'est utilisé. <a href="politique-confidentialite.html" style="color:var(--or); font-weight:700;">En savoir plus</a></p>
+  <button onclick="acceptCookies()" style="background:var(--or); color:var(--vert-f); border:none; padding:10px 24px; border-radius:4px; font-family:'Nunito',sans-serif; font-weight:800; font-size:.9rem; cursor:pointer; white-space:nowrap;">J'accepte</button>
+</div>
 <!-- NAV -->
 <nav id="navbar">
   <img src="images/logo_sipsta.png" alt="Sipsta Modern Rituals" class="nav-logo">
@@ -733,6 +738,16 @@
       btn.disabled = false;
     }
   });
+</script>
+
+ <script>
+  function acceptCookies() {
+    document.getElementById('cookie-banner').style.display = 'none';
+    sessionStorage.setItem('cookies-accepted', 'true');
+  }
+  if (sessionStorage.getItem('cookies-accepted')) {
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
 </script>
 </body>
 </html>
