@@ -351,8 +351,8 @@
       .nav-links.open { display: flex; }
       .nav-burger { display: flex; }
       .hero { grid-template-columns: 1fr; }
-      .hero-img { height: 260px; }
-      .hero-right { padding: 40px 5%; }
+      .hero-img { height: 300px; padding: 16px 16px 0 16px; object-fit: cover; }
+      .hero-right { padding: 24px 5%; margin-left: 0; }
       .pourquoi-grid { grid-template-columns: repeat(2, 1fr); }
       .produits-grid { grid-template-columns: repeat(2, 1fr); }
       .focus { grid-template-columns: 1fr; }
@@ -361,11 +361,16 @@
       .ou-grid { grid-template-columns: 1fr; }
       .contact-form { grid-template-columns: 1fr; }
     }
+
     @media (max-width: 560px) {
       .pourquoi-grid { grid-template-columns: 1fr; }
       .produits-grid { grid-template-columns: 1fr; }
-      .img-strip.cols4 { grid-template-columns: repeat(2, 1fr); height: 360px; }
       footer { flex-direction: column; text-align: center; }
+      .hero-img { height: 220px; }
+      .hero-card h1 { font-size: 1.6rem; }
+      .hero-card { padding: 24px 20px; }
+      .histoire-gauche { padding: 40px 5%; }
+      .histoire-droite { padding: 40px 5%; }
     }
   </style>
 </head>
