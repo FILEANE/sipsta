@@ -351,6 +351,8 @@
       .nav-links.open { display: flex; }
       .nav-burger { display: flex; }
       .hero { grid-template-columns: 1fr; }
+      .hero-right img[alt="Juste avec de l'eau"] { display: none; } 
+      section > div > div[style*="grid-template-columns:1fr 1fr"] { grid-template-columns: 1fr !important; }
       .hero-img { height: 300px; padding: 16px 16px 0 16px; object-fit: cover; }
       .hero-right { padding: 24px 5%; margin-left: 0; }
       .pourquoi-grid { grid-template-columns: repeat(2, 1fr); }
@@ -360,6 +362,8 @@
       .histoire { grid-template-columns: 1fr; }
       .ou-grid { grid-template-columns: 1fr; }
       .contact-form { grid-template-columns: 1fr; }
+      .focus-grid { grid-template-columns: 1fr !important; }
+      .focus-grid img { height: 280px !important; }
     }
 
     @media (max-width: 560px) {
@@ -572,7 +576,7 @@
   <div style="max-width:1100px; margin:0 auto;">
     <h2 style="font-family:'Playfair Display',serif; font-size:clamp(1.6rem,2.5vw,2.2rem); color:var(--vert-f); font-style:italic; margin-bottom:20px; text-align:center;">— Gros plan sur notre Super Matcha Cacao —</h2>
     <p style="font-size:.95rem; color:#555; line-height:1.8; margin-bottom:48px; max-width:760px; margin-left:auto; margin-right:auto; text-align:center;">On a pris notre Matcha Latte préféré, et on est allés encore plus loin. Le Super Matcha Latte Cacao associe la puissance antioxydante du matcha bio, la douceur réconfortante du cacao, et deux ingrédients bien-être d'exception : du collagène végétarien et du Lion's Mane, un champignon adaptogène reconnu pour soutenir la clarté mentale et la concentration au quotidien.</p>
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;" class="focus-grid">
       <div>
         <h4 style="text-transform:uppercase; font-size:.8rem; letter-spacing:.1em; color:#888; margin-bottom:20px;">CE QUI FAIT LA DIFFÉRENCE :</h4>
         <div style="margin-bottom:18px;"><strong style="color:var(--vert-f);">Lion's Mane</strong><span style="font-size:.9rem; color:#555;"> – Champignon adaptogène reconnu pour ses bienfaits sur la clarté mentale, la concentration et l'énergie cognitive. Un allié du quotidien, naturellement.</span></div>
